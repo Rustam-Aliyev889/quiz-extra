@@ -1,0 +1,109 @@
+body {
+    color: #fff;
+
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 1.4rem;
+    width: 100%;
+    border-radius: 7px;
+    background: rgb(58, 41, 82);
+    font-size: 5rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 1.5rem 0 #df9af1;
+    transform: scale(1.02);
+    transform:100ms;
+}
+
+.chioce-prefix {
+    padding: 2rem 2.5rem;
+    color: #df9af1
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(28deg, rgb(82, 239, 82) 0%, green 100%);
+}
+
+.incorrect {
+    background: linear-gradient(28deg, rgb(252, 85, 85) 0%, rgb(166, 12, 12) 100%);
+}
+
+/* upper display */
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: 0.2rem solid yellow;
+    border-radius: 50px;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: yellow;
+    width: 0%;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 50px;
+    background: rgb(58, 41, 82);
+    border: 0.2rem solid yellow;
+    border-radius: 10px;
+    padding: 0 7px;
+    margin-top: 3rem;
+}
+
+.timer .time_text {
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+}
+
+.timer .timer_sec {
+    font-size: 18px;
+    font-weight: 500;
+    background: #9638ab;
+    height: 30px;
+    width: 45px;
+    color: rgb(250, 247, 247);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 0.2rem solid yellow;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
